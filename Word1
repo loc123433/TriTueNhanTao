@@ -1,0 +1,202 @@
+ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH
+ĐẠI HỌC AN GIANG
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+LỜI MỞ ĐẦU
+	
+ 
+Nhận xét
+
+
+ 
+
+
+
+MỤC LỤC
+LỜI MỞ ĐẦU	2
+Chương 1  GIỚI THIỆU	6
+1.1 Tổng Quan	7
+1.1.1 Mở đầu	7
+1.1.2 Mục tiêu của đồ án	7
+1.1.3 Đối tượng nghiên cứu	8
+1.1.4 Phạm vi nghiên cứu	8
+1.2 Phương pháp – kết quả	8
+1.2.1 Phương pháp	8
+*Phương pháp chủ đạo	8
+Chương 2  CƠ SỞ LÝ THUYẾT	10
+2.1 Tổng quan về khử nhiểu ảnh Denoise	10
+2.1.1 Tổng quan về DEnoise	10
+	12
+2.2 Một số thư viện và môi trường cần thiết	12
+Chương 3  XÂY DỰNG ĐỒ ÁN	16
+3.1 Xây dựng tập dữ liệu	16
+3.2 Tiến hành trainning	17
+3.3 Triển khai demo xử lý ảnh Denoise	20
+Chương 4: Kết luận và hướng phát triển	26
+5.1 Kết luận	26
+5.2 Hướng phát triển	26
+
+
+
+
+
+
+
+Chương 1  GIỚI THIỆU	
+ 
+1.1	Tổng Quan
+1.1.1	Mở đầu
+Hiện nay, cùng với sự phát triển của xã hội, công nghệ tân tiến việc chỉnh sửa hình ảnh ngày càng được nâng cao. Các hệ thống nhằm mục đích giải quyết các trường hợp,các vấn đề về hình ảnh được ra đời với độ tin cậy ngày càng cao. Một trong các bài toán xử lý ảnh bị nhiểu rất được quan tâm hiện nay là khử nhiểu ảnh Denoise. Vì khử nhiểu ảnh Denoise là cách mà con người sử dụng để giải quyết các tình trạng bị nhiểu hình ảnh bởi nhiều vấn đề gây ra. Bên cạnh đó, ngày nay việc thu thập, xử lý thông tin qua ảnh  phục vụ cho nhiều mục đích khác nhau , cho nên để ảnh đạt chất lượng cao đang được quan tâm. Với phương pháp này, chúng ta có thể giải quyết vấn đè ảnh bị nhòe ,  bị nhiểu nhằm phục vụ cho công việt tốt hơn. Sự phát triển của khoa học máy tính tạo môi trường thuận lợi cho việc nghiên cứu cách khử nhiểu ảnh.Trong đó Denoise là phương án tối ưu .
+Trong khuôn khổ đồ án này, chúng em sẽ tiếp tục giải quyết bài toán khử nhiểu ảnh. Trong đó đối tượng sẽ được khử nhiểu trục tiếp. 
+1.1.2	Mục tiêu của đồ án
+Mục tiêu của đồ án khử nhiểu ảnh Denoise là phát triển một hệ thống thông minh có khả năng giải quyết mỗi vấn đề khiến ảnh bị nhiểu , làm cho hình ảnh đạt chất lượng tốt nhất. Hệ thống sẽ sử dụng các thuật toán và công nghệ khử nhiểu hình ảnh, với các phương pháo tối ưu giải quyết vấn đề nan giải này. Bằng cách này, đồ án nhằm hỗ trợ người dùng giải quyết các vấn đề về hình ảnh cả trong công việc và cuộc sống  phục vụ cho nhu cầu chùng và riêng của cá nhân và tập thể. Qua việc khử nhiêủ ảnh Denoise, đồ án này đóng góp vào việc giả quyết  vấn đề an toàn , hiểu quả đem lại sự hài lòng cho mội người.
+	Input: Ảnh mặt người, video, camera.
+	Output: Nhận diện khẩu trang 
+1.1.3	Đối tượng nghiên cứu
+-	Ngôn ngữ Python
+-	Opencv
+-	Các thuật toán khử nhiểu
+-	
+1.1.4	Phạm vi nghiên cứu	
+-	Tiềm hiểu về chương trình khử nhiểu ảnh Denoise.
+-	Ứng dụng đề tài phục vụ cho việc nghiên cứu về lĩnh vực Công nghệ.
+1.2	Phương pháp – kết quả
+1.2.1	Phương pháp
+*Phương pháp chủ đạo 
+	-  Phương pháp nghiên cứu lý thuyết:
+	+ Tìm hiểu tổng quan về bài toán gải quyết khử nhiểu anhe Denoise.
++ 
+	+
+	+ 
+	- Phương pháp nghiên cứu thực nghiệm:
+	+ Tập hợp dữ liệu và tiến hành tiền xử lí
+	+ Chọn đới tượng và sử dụng phương pháp Denoise giải quyết
+	+ Tiến hành training trên máy tính.
+	+Sử dụng các thư viện cần thiết để hệ thống giải quyết vấn đề tốt nhất
+ Kết quả
+- Tạo ra một chương trình giả quyết vấn đề các hình ảnh bị nhiểu bằng Denoise
+ 
+ 
+Chương 2  CƠ SỞ LÝ THUYẾT
+2.1 Tổng quan về Khử nhiểu ảnh Denoise
+
+2.1.1 Tổng quan về noise
+
+Noise được hiểu cơ bản là các dạng chấm hạt nhỏ phân bố trên hình ảnh nó khá giống như Grain trên film. Noise có thể làm biến dạng các chi tiết trong ảnh khiến cho chất lượng ảnh thấp. Và điều này chắc chắn không một nhiếp ảnh gia nào muốn nó xảy ra với ảnh của mình.
+ 
+
+
+2.1.2 Nguyên nhân dẫn đến Noise trong chụp ảnh
+
+Nguyên nhân gây ra tình trạng Noise khá đa dạng. Những yếu tố gây nên tình trạng Noise có thể kể đến như:
+* Công nghệ cảm biến của máy ảnh, 
+* ISO
+* Thời gian phơi sáng quá lâu. 
+Ngoài ra nguyên nhân dẫn đến Noise còn có thể do nhiệt độ môi trường hoặc do máy ảnh của bạn đã qua thời gian sử dụng dài.
+ 				
+Các bước để khuer nhiểu ảnh Denoise
+.
+??
+??
+??
+					
+2.2 Có những loại Noise nào
+
+Có hai loại nhiễu mà các bạn sẽ gặp khi chụp bằng máy ảnh kỹ thuật số đó là:
+•	Chroma noise (nhiễu màu):  những điểm ảnh bị sai lệch về màu sắc. Nó xuất hiện dưới dạng các hạt lấm chấm màu xanh, đỏ
+
+•	Luminance noise (nhiễu đơn sắc):  khá giống với nhiễu trên máy ảnh film (grain), là nhiễu do hạt nhiễu đen, trắng và xám (không có màu) giống như những hạt muối tiêu lấm chấm.
+
+•	
+2.2.1 ISO ảnh hưởng như thế nào đến độ noise của bức ảnh?
+
+Nếu điều chỉnh chỉ số ISO thấp thì phim hoặc cảm biến có độ nhạy sáng không cao, và người chụp cần phải mở khẩu độ ống kính để lấy thêm ánh sáng cho cảm biến, hoặc điều chỉnh tốc độ chụp để cung cấp thêm ánh sáng trong một khoảng thời gian dài hơn.
+Nếu điều chỉnh chỉ số ISO thấp thì phim hoặc cảm biến có độ nhạy sáng không cao, và người chụp cần phải mở khẩu độ ống kính để lấy thêm ánh sáng cho cảm biến, hoặc điều chỉnh tốc độ chụp để cung cấp thêm ánh sáng trong một khoảng thời gian dài hơn.
+3. Cách giảm và khử Noise (nhiễu) trong nhiếp ảnh
+
+Một tấm ảnh xuất hiện Noise quá nhiều sẽ khiến ảnh kém chất lượng. Nếu bạn phát hiện ảnh của bạn bị nhiễu quá nhiều thì hãy thực hiện các cách sau, có thể sẽ cứu vớt tấm hình của bạn đấy.
+Giảm Noise (nhiễu) khi chụp ảnh
+Điều chỉnh ISO thấp: ISO cao sẽ làm tăng khả năng nhiễu hình. Để giảm thiểu tình trạng nhiễu ảnh bạn nên điều chỉnh ISO dưới 16000 để có được độ phơi sáng thích hợp. Tuy nhiên mức nhiễu này còn tuỳ thuộc vào cảm biến của máy ảnh có khả năng chụp ISO ở mức nào.
+Cảm biến lớn hơn: Kích thước của cảm biến đóng vai trò quan trọng trong chất lượng hình ảnh bao gồm cả độ Noise (nhiễu) ảnh. Cảm biến có khả năng thu nhận ánh sáng và chuyển đổi những gì bạn thấy trên ống ngắm và màn hình LCD thành một bức ảnh. Chính vì vậy để giảm tình trạng nhiễu hình ảnh bạn nên chọn cho mình cảm biến ảnh càng lớn càng thu được chất lượng ảnh cao.
+Phơi sáng đúng cách: Một bức ảnh được phơi sáng đúng cách sẽ giảm khả năng nhiễu ảnh. Tuy nhiên còn tuỳ thuộc vào model mà cách phơi sáng khác nhau. Một số máy ảnh cho phép độ nhạy sáng được thiết đặt tự động ngay cả trong chế độ M.
+Khử Noise trong bước hậu kì
+Ngoài cách giảm Noise khi chụp ảnh, bạn còn có thể khử Noise trong bước hậu kì. Với cách này bạn thể điều chỉnh độ Noise cũng như khử nó nếu muốn bằng phần mềm Lightroom. Đễ giảm/ khử Noise trong Lightroom bạn cần điều chỉnh thanh Luminance sang phải để có được hình ảnh ưng ý.
+
+4.	
+Chương 3  XÂY DỰNG ĐỒ ÁN
+	3.1 Xây dựng tập dữ liệu (dataset)
+	Để xây dựng tập dữ liệu phục vụ cho việc huấn luyện (train) dữ liệu. 
+- Tập ảnh chứa các hình ảnh bị nhiểu với ác nguyên nhân và múc đọ nhiểu khác nhau: chúng ta tạo ra một kho ảnh chụp  với nhiều nội dung khác nhau, sau đó training tập này
+
+
+
+???
+Hình ảnh bị nhiểu
+ 
+Cấu trúc của  dataset gồm : 
++ Thư mục code  : chứa dữ liệu được sử dụng cho việc chạy chương trình.
++Thư mục hình ảnh  : chứa các hình ảnh phục vụ cho việc  demo nhằm để đánh giá hiệu suất  xử lý của hệ thống. 
+	
+3.2 Tiến hành trainning 
+- Sử dụng Pycharm để trainning vì được cung cấp miễn phí tài nguyên để thực hiện quá trình trainning
+- 
+
+- 
+Như  có thể thấy, chúng ta đang đạt được độ chính xác ~ 88% trên bộ thử nghiệm.
+Với những kết quả này, chúng ta hy vọng rằng mô hình của chúng ta sẽ tổng quát hóa tốt cho các hình ảnh bên ngoài tập huấn luyện và thử nghiệm của chúng ta.
+3.3 Triển khai demo xử lý ảnh Denoise
+Ứng dụng cần có để chạy demo
+????
+Hình ảnh
+Dử liệu code cần có
+?????
+Hình ảnh
+
+????????
+Hình ảnh
+Hình ảnh chuẩn bị
+
+????
+Hình ảnh
+Upload code  vào hình có sẳn
+????
+Hình ảnh
+
+Và kết quả :
+????
+Hình ảnh thu đc
+Ảnh đã được xử lý băng công nghệ Denoise
+
+Mức độ khử nhiểu
+?????
+Hình ảnh
+Các lỗi nhiễu bị sử lý cao đén 70,80%
+
+
+	
+
+Chương 4: Kết luận và hướng phát triển
+ 
+5.1 Kết luận
+Sau thời gian vừa học vừa triển khai xây dựng thì cuối cùng cơ bản hệ thống cũng hoàn thành.
+Hệ thống có thể load và training dữ liệu từ tập dữ liệu đã tạo ra gồm các ảnh  bị nhiểu.
+Từ đó có thể phân tích và xử lý giải quyết vấn đề hình ảnh bị nhiểu
+Tuy nhiên vì thời gian và kiến thức có hạn,nhóm em đã cơ bản hoàn thành hệ thống nên còn một vài hạn chế nhất định như sau:
+	- Hệ thống xử lý hoạt động kém với lượng hình ảnh bị nhiểu quá lớn.
+- Chưa thể đưa ra cảnh báo bằng âm thanh.
+5.2 Hướng phát triển
+Vì hệ thống còn một số hạn chế nên nhóm em sẽ tiếp tục cải thiện hệ thống về khuer nhiểu ảnh Denoise.
+Sưu tập được bộ ảnh dữ liệu thật để nâng cao khả năng xử lý và đưa ra kết quả chính xác hơn.
+Bổ sung tính năng tốt hơn
+
+
