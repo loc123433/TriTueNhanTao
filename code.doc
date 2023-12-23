@@ -1,4 +1,4 @@
-import cv2
+import cv2 /*thecode*/
 
 def denoise_image(image_path):
     # Đọc ảnh từ đường dẫn
