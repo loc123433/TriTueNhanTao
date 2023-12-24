@@ -12,3 +12,9 @@ def denoise_image(image_path):
     cv2.imshow("Denoised Image", denoised_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+    # Đường dẫn đến ảnh
+image_path = "NoiseKT(2).jpg"
+
+# Gọi hàm denoise_image với đường dẫn ảnh
+denoise_image(image_path)
