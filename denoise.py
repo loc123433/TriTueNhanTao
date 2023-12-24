@@ -10,3 +10,5 @@ def denoise_image(image_path):
     # Hiển thị ảnh gốc và ảnh đã được làm giảm nhiễu
     cv2.imshow("Original Image", image)
     cv2.imshow("Denoised Image", denoised_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
