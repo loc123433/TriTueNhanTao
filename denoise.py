@@ -20,3 +20,4 @@ image_path = "NoiseKT(2).jpg"
 denoise_image(image_path)
 #them ham chuc
 #themcode
+#code
