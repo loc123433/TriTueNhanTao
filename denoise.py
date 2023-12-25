@@ -21,3 +21,4 @@ denoise_image(image_path)
 #them ham chuc
 #themcode
 #code
+#them cv
