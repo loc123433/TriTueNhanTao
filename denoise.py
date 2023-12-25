@@ -18,7 +18,4 @@ image_path = "NoiseKT(2).jpg"
 
 # Gọi hàm denoise_image với đường dẫn ảnh
 denoise_image(image_path)
-#them ham chuc
-#themcode
-#code
-#them cv
+#sua
