@@ -1,5 +1,5 @@
-import cv2
-
+import cv2 
+#themcode
 def denoise_image(image_path):
     # Đọc ảnh từ đường dẫn
     image = cv2.imread(image_path)
@@ -18,3 +18,4 @@ image_path = "NoiseKT(2).jpg"
 
 # Gọi hàm denoise_image với đường dẫn ảnh
 denoise_image(image_path)
+#them ham chuc
