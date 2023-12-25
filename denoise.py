@@ -17,4 +17,4 @@ def denoise_image(image_path):
 image_path = "NoiseKT(2).jpg"
 
 # Gọi hàm denoise_image với đường dẫn ảnh
-denoise_image(image_path)
+denoise_image(image_path)####
